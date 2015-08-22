@@ -41,4 +41,14 @@ public class DiamondAcceptanceTest {
         assertEquals(expected, display);
     }
 
+    @Test
+    public void should_print_ABCDDCBA_when_widest_letter_is_D() throws Exception {
+        final Diamond diamond = new Diamond();
+
+        final String display = diamond.print('D');
+
+        final String expected = "   A   \n" + "  B B  \n" + " C   C \n" + "D     D\n" + " C   C \n" + "  B B  \n" + "   A   ";
+        assertEquals(expected, display);
+    }
+
 }
