@@ -26,7 +26,7 @@ public class DiamondTest {
 
         final String display = diamond.print('B');
 
-        final String expected = "A\nB\nA";
+        final String expected = "A\nBB\nA";
         assertEquals(expected, display);
     }
 
@@ -36,7 +36,7 @@ public class DiamondTest {
 
         final String display = diamond.print('C');
 
-        final String expected = "A\nB\nC\nB\nA";
+        final String expected = "A\nBB\nCC\nBB\nA";
         assertEquals(expected, display);
     }
 
@@ -46,7 +46,7 @@ public class DiamondTest {
 
         final String display = diamond.print('D');
 
-        final String expected = "A\nB\nC\nD\nC\nB\nA";
+        final String expected = "A\nBB\nCC\nDD\nCC\nBB\nA";
         assertEquals(expected, display);
     }
 

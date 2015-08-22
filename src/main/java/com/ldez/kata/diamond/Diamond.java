@@ -17,6 +17,13 @@ public class Diamond {
                 .map(number -> distanceWithRootLetter - Math.abs(number))
                 // convert distance to character
                 .mapToObj(distance -> (char) (ROOT_LETTER + distance))
+                // build a line
+                .map(letter -> {
+                    if (ROOT_LETTER == letter) {
+                        return new char[] { letter };
+                    }
+                    return new char[] { letter, letter };
+                })
                 // convert to String
                 .map(String::valueOf)
                 // aggregate letters
