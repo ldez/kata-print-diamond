@@ -20,7 +20,7 @@ public class Diamond {
                 // convert to String
                 .map(String::valueOf)
                 // aggregate letters
-                .collect(Collectors.joining());
+                .collect(Collectors.joining("\n"));
     }
 
 }
