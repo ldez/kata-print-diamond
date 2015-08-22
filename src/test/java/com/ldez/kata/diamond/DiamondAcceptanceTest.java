@@ -4,12 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class DiamondTest {
-
-    @Test
-    public void should_have_A_as_root_letter() throws Exception {
-        assertEquals(Diamond.ROOT_LETTER, 'A');
-    }
+public class DiamondAcceptanceTest {
 
     @Test
     public void should_print_A_when_widest_letter_is_A() throws Exception {
@@ -21,12 +16,14 @@ public class DiamondTest {
     }
 
     @Test
-    public void should_print_ABA_when_widest_letter_is_B() throws Exception {
+    public void should_print_ABBA_when_widest_letter_is_B() throws Exception {
         final Diamond diamond = new Diamond();
 
         final String display = diamond.print('B');
 
-        final String expected = "ABA";
+        final String expected = " A \n" //
+                + "B B\n"//
+                + " A ";
         assertEquals(expected, display);
     }
 
