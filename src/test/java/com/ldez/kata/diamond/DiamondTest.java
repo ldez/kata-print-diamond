@@ -11,4 +11,13 @@ public class DiamondTest {
         assertEquals(Diamond.ROOT_LETTER, 'A');
     }
 
+    @Test
+    public void should_print_A_when_widest_letter_is_A() throws Exception {
+        final Diamond diamond = new Diamond();
+
+        final String display = diamond.print('A');
+
+        assertEquals("A", display);
+    }
+
 }
