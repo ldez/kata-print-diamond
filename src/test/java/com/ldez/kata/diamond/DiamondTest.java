@@ -7,8 +7,8 @@ import org.junit.Test;
 public class DiamondTest {
 
     @Test
-    public void should_test() throws Exception {
-        assertEquals("foo", "bar");
+    public void should_have_A_as_root_letter() throws Exception {
+        assertEquals(Diamond.ROOT_LETTER, 'A');
     }
 
 }
