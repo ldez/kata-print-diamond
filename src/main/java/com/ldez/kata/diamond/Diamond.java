@@ -5,13 +5,17 @@ public class Diamond {
     public static char ROOT_LETTER = 'A';
 
     public final String print(final char widestLetter) {
-        if ('D' == widestLetter) {
+
+        // distance between ROOT_LETTER and the widest Letter
+        final int distanceWithRootLetter = Character.compare(widestLetter, ROOT_LETTER);
+
+        if (3 == distanceWithRootLetter) {
             return "ABCDCBA";
         }
-        if ('C' == widestLetter) {
+        if (2 == distanceWithRootLetter) {
             return "ABCBA";
         }
-        if ('B' == widestLetter) {
+        if (1 == distanceWithRootLetter) {
             return "ABA";
         }
         return "A";
