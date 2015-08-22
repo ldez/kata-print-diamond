@@ -21,8 +21,8 @@ public class DiamondAcceptanceTest {
 
         final String display = diamond.print('B');
 
-        final String expected = " A \n" //
-                + "B B\n" //
+        final String expected = " A " + System.lineSeparator() //
+                + "B B" + System.lineSeparator() //
                 + " A ";
         assertEquals(expected, display);
     }
@@ -33,10 +33,10 @@ public class DiamondAcceptanceTest {
 
         final String display = diamond.print('C');
 
-        final String expected = "  A  \n" //
-                + " B B \n" //
-                + "C   C\n" //
-                + " B B \n" //
+        final String expected = "  A  " + System.lineSeparator() //
+                + " B B " + System.lineSeparator() //
+                + "C   C" + System.lineSeparator() //
+                + " B B " + System.lineSeparator() //
                 + "  A  ";
         assertEquals(expected, display);
     }
@@ -47,12 +47,12 @@ public class DiamondAcceptanceTest {
 
         final String display = diamond.print('D');
 
-        final String expected = "   A   \n" //
-                + "  B B  \n" //
-                + " C   C \n" //
-                + "D     D\n" //
-                + " C   C \n" //
-                + "  B B  \n" //
+        final String expected = "   A   " + System.lineSeparator() //
+                + "  B B  " + System.lineSeparator() //
+                + " C   C " + System.lineSeparator() //
+                + "D     D" + System.lineSeparator() //
+                + " C   C " + System.lineSeparator() //
+                + "  B B  " + System.lineSeparator() //
                 + "   A   ";
         assertEquals(expected, display);
     }

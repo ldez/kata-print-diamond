@@ -42,7 +42,8 @@ public class Diamond {
                 // convert to String
                 .map(String::valueOf)
                 // aggregate letters
-                .collect(Collectors.joining("\n"));
+                .collect(Collectors.joining(System.lineSeparator()));
+
     }
 
 }
