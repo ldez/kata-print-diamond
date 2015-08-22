@@ -22,8 +22,22 @@ public class DiamondAcceptanceTest {
         final String display = diamond.print('B');
 
         final String expected = " A \n" //
-                + "B B\n"//
+                + "B B\n" //
                 + " A ";
+        assertEquals(expected, display);
+    }
+
+    @Test
+    public void should_print_ABCCBA_when_widest_letter_is_C() throws Exception {
+        final Diamond diamond = new Diamond();
+
+        final String display = diamond.print('C');
+
+        final String expected = "  A  \n" //
+                + " B B \n" //
+                + "C   C\n" //
+                + " B B \n" //
+                + "  A  ";
         assertEquals(expected, display);
     }
 
