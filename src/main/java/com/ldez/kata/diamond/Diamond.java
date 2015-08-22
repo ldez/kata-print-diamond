@@ -30,10 +30,11 @@ public class Diamond {
                     // distance between current letter and root letter
                     final int distance = Character.compare(letter, ROOT_LETTER);
 
-                    if (ROOT_LETTER == letter) {
-                        line[distanceWithRootLetter] = letter;
-                    } else {
-                        line[distanceWithRootLetter - distance] = letter;
+                    // put the first letter in the line
+                    line[distanceWithRootLetter - distance] = letter;
+
+                    // if is not the first line, put the second letter
+                    if (ROOT_LETTER != letter) {
                         line[distanceWithRootLetter + distance] = letter;
                     }
                     return line;
