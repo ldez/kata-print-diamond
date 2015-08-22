@@ -47,7 +47,13 @@ public class DiamondAcceptanceTest {
 
         final String display = diamond.print('D');
 
-        final String expected = "   A   \n" + "  B B  \n" + " C   C \n" + "D     D\n" + " C   C \n" + "  B B  \n" + "   A   ";
+        final String expected = "   A   \n" //
+                + "  B B  \n" //
+                + " C   C \n" //
+                + "D     D\n" //
+                + " C   C \n" //
+                + "  B B  \n" //
+                + "   A   ";
         assertEquals(expected, display);
     }
 
