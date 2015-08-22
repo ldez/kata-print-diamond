@@ -26,9 +26,9 @@ public class DiamondTest {
 
         final String display = diamond.print('B');
 
-        final String expected = "A  \n" //
-                + "BB \n" //
-                + "A  ";
+        final String expected = " A \n" //
+                + "B B\n" //
+                + " A ";
         assertEquals(expected, display);
     }
 
@@ -38,11 +38,11 @@ public class DiamondTest {
 
         final String display = diamond.print('C');
 
-        final String expected = "A    \n" //
-                + "BB   \n" //
-                + "CC   \n" //
-                + "BB   \n" //
-                + "A    ";
+        final String expected = "  A  \n" //
+                + " B B \n" //
+                + "C   C\n" //
+                + " B B \n" //
+                + "  A  ";
         assertEquals(expected, display);
     }
 
@@ -52,13 +52,13 @@ public class DiamondTest {
 
         final String display = diamond.print('D');
 
-        final String expected = "A      \n" //
-                + "BB     \n" //
-                + "CC     \n" //
-                + "DD     \n" //
-                + "CC     \n" //
-                + "BB     \n" //
-                + "A      ";
+        final String expected = "   A   \n" //
+                + "  B B  \n" //
+                + " C   C \n" //
+                + "D     D\n" //
+                + " C   C \n" //
+                + "  B B  \n" //
+                + "   A   ";
         assertEquals(expected, display);
     }
 

@@ -27,11 +27,14 @@ public class Diamond {
                     // Fill for replace 'null' character with space character
                     Arrays.fill(line, ' ');
 
+                    // distance between current letter and root letter
+                    final int distance = Character.compare(letter, ROOT_LETTER);
+
                     if (ROOT_LETTER == letter) {
-                        line[0] = letter;
+                        line[distanceWithRootLetter] = letter;
                     } else {
-                        line[0] = letter;
-                        line[1] = letter;
+                        line[distanceWithRootLetter - distance] = letter;
+                        line[distanceWithRootLetter + distance] = letter;
                     }
                     return line;
                 })
