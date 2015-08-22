@@ -21,32 +21,44 @@ public class DiamondTest {
     }
 
     @Test
-    public void should_print_ABA_when_widest_letter_is_B() throws Exception {
+    public void should_print_ABBA_when_widest_letter_is_B() throws Exception {
         final Diamond diamond = new Diamond();
 
         final String display = diamond.print('B');
 
-        final String expected = "A\nBB\nA";
+        final String expected = "A  \n" //
+                + "BB \n" //
+                + "A  ";
         assertEquals(expected, display);
     }
 
     @Test
-    public void should_print_ABCBA_when_widest_letter_is_C() throws Exception {
+    public void should_print_ABCCBA_when_widest_letter_is_C() throws Exception {
         final Diamond diamond = new Diamond();
 
         final String display = diamond.print('C');
 
-        final String expected = "A\nBB\nCC\nBB\nA";
+        final String expected = "A    \n" //
+                + "BB   \n" //
+                + "CC   \n" //
+                + "BB   \n" //
+                + "A    ";
         assertEquals(expected, display);
     }
 
     @Test
-    public void should_print_ABCDCBA_when_widest_letter_is_D() throws Exception {
+    public void should_print_ABCDDCBA_when_widest_letter_is_D() throws Exception {
         final Diamond diamond = new Diamond();
 
         final String display = diamond.print('D');
 
-        final String expected = "A\nBB\nCC\nDD\nCC\nBB\nA";
+        final String expected = "A      \n" //
+                + "BB     \n" //
+                + "CC     \n" //
+                + "DD     \n" //
+                + "CC     \n" //
+                + "BB     \n" //
+                + "A      ";
         assertEquals(expected, display);
     }
 
