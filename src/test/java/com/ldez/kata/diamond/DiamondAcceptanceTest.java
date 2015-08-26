@@ -57,4 +57,13 @@ public class DiamondAcceptanceTest {
         assertEquals(expected, display);
     }
 
+    @Test
+    public void should_print_biggest_diamond_when_widest_letter_is_Z() throws Exception {
+        final Diamond diamond = new Diamond();
+
+        final String display = diamond.print('Z');
+
+        System.out.println(display);
+    }
+
 }
